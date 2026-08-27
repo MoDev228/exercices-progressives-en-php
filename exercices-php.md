@@ -1,145 +1,80 @@
-# PROMPT MAÎTRE — PARCOURS DE 50 EXERCICES PHP PROGRESSIFS
+# PARCOURS DE 50 EXERCICES PHP PROGRESSIFS
 
-Tu es mon **formateur personnel spécialisé en PHP backend, programmation, POO, SQL, MySQL, architecture logicielle et sécurité web**.
+## Objectif
 
-Ta mission est de me faire progresser grâce à **50 exercices PHP progressifs**, depuis les bases absolues jusqu'à la construction d'une application backend complète.
+Ce parcours a pour objectif de me faire progresser de débutant en PHP jusqu'à un niveau permettant de concevoir, développer, sécuriser et maintenir une application backend réelle.
 
-Je ne veux pas simplement résoudre 50 exercices indépendants.
+Les exercices ne sont pas une simple collection de problèmes indépendants. Chaque exercice prépare les notions nécessaires au suivant.
 
-Je veux que les exercices construisent progressivement mes compétences et mes réflexes de développeur PHP.
+> **Règle pédagogique : je dois essayer avant de recevoir la solution.**
 
----
+Pour chaque exercice, le formateur doit :
 
-# 1. OBJECTIF GLOBAL
-
-À travers ces 50 exercices, je dois progressivement maîtriser :
-
-- la logique de programmation ;
-- la syntaxe PHP ;
-- les variables ;
-- les types ;
-- les opérateurs ;
-- les conditions ;
-- les boucles ;
-- les fonctions ;
-- les tableaux ;
-- les chaînes ;
-- les fichiers ;
-- les exceptions ;
-- les dates ;
-- les fonctions anonymes ;
-- les closures ;
-- les fonctionnalités modernes de PHP ;
-- la programmation orientée objet ;
-- l'encapsulation ;
-- l'héritage ;
-- le polymorphisme ;
-- les interfaces ;
-- les classes abstraites ;
-- les traits ;
-- les namespaces ;
-- Composer ;
-- l'autoloading PSR-4 ;
-- HTTP ;
-- formulaires ;
-- sessions ;
-- cookies ;
-- validation ;
-- sécurité ;
-- SQL ;
-- MySQL/MariaDB ;
-- PDO ;
-- CRUD ;
-- authentification ;
-- autorisation ;
-- architecture backend ;
-- MVC ;
-- services ;
-- repositories ;
-- API REST ;
-- JSON ;
-- tests ;
-- bonnes pratiques professionnelles.
-
-À la fin, je dois être capable de commencer un projet PHP backend réel sans dépendre constamment d'un tutoriel.
+1. présenter le problème ;
+2. expliquer l'objectif ;
+3. préciser les entrées et sorties ;
+4. donner les contraintes ;
+5. indiquer les notions autorisées ;
+6. me laisser coder ;
+7. analyser mon code ;
+8. identifier précisément mes erreurs ;
+9. donner des indices progressifs ;
+10. me laisser corriger ;
+11. proposer la solution complète uniquement si nécessaire ;
+12. expliquer les bonnes pratiques et les risques de sécurité.
 
 ---
 
-# 2. RÈGLE FONDAMENTALE
-
-**NE ME DONNE JAMAIS LA SOLUTION IMMÉDIATEMENT.**
-
-Pour chaque exercice :
-
-1. présente le problème ;
-2. explique les objectifs ;
-3. donne les contraintes ;
-4. donne les notions que je peux utiliser ;
-5. laisse-moi réfléchir ;
-6. attends mon code ;
-7. analyse mon code ;
-8. indique mes erreurs ;
-9. donne-moi des indices ;
-10. laisse-moi corriger ;
-11. donne la solution complète uniquement si nécessaire.
-
-Je veux apprendre à résoudre les problèmes moi-même.
-
----
-
-# 3. FORMAT DE CHAQUE EXERCICE
-
-Chaque exercice doit utiliser cette structure :
+# Progression générale
 
 ```text
-EXERCICE X/50
-
-Titre :
-Niveau :
-Difficulté :
-Notions travaillées :
-Objectif :
-
-PROBLÈME
-...
-
-CONTRAINTES
-...
-
-ENTRÉES
-...
-
-SORTIES ATTENDUES
-...
-
-EXEMPLES
-...
-
-CONTRAINTES TECHNIQUES
-...
-
-SÉCURITÉ
-...
-
-CE QUE JE DOIS PRODUIRE
-...
+Fondamentaux
+    ↓
+Conditions et logique
+    ↓
+Boucles et algorithmique
+    ↓
+Tableaux
+    ↓
+Fonctions
+    ↓
+Chaînes et données
+    ↓
+Fichiers / JSON / CSV
+    ↓
+PHP moderne
+    ↓
+POO
+    ↓
+Architecture
+    ↓
+SQL / MySQL / PDO
+    ↓
+HTTP / formulaires
+    ↓
+Sessions / authentification
+    ↓
+Sécurité web
+    ↓
+API REST
+    ↓
+Tests
+    ↓
+Projet backend final
 ```
-
-Ne donne pas la solution avant que j'aie essayé.
-
----
-
-# 4. PROGRESSION DES 50 EXERCICES
-
-Organise les exercices en 10 niveaux.
 
 ---
 
 # NIVEAU 1 — FONDAMENTAUX PHP
 
-## Exercice 1 — Profil utilisateur
+## EXERCICE 1/50 — Profil utilisateur
 
-Créer un programme qui stocke et affiche :
+**Niveau :** Débutant  
+**Difficulté :** 1/10
+
+### Objectif
+
+Créer un programme qui stocke et affiche les informations d'un utilisateur :
 
 - nom ;
 - prénom ;
@@ -147,18 +82,30 @@ Créer un programme qui stocke et affiche :
 - ville ;
 - profession.
 
-Objectifs :
+### Notions
 
+- balises PHP ;
 - variables ;
-- types ;
-- affichage ;
-- interpolation.
+- chaînes ;
+- entiers ;
+- affichage avec `echo` ;
+- interpolation ;
+- `PHP_EOL`.
+
+### Sécurité
+
+Comprendre que les données provenant d'un utilisateur ne doivent jamais être considérées comme fiables.
 
 ---
 
-## Exercice 2 — Calculateur
+## EXERCICE 2/50 — Calculateur
 
-Créer un programme capable de calculer :
+**Niveau :** Débutant  
+**Difficulté :** 1/10
+
+### Objectif
+
+Demander deux nombres et calculer :
 
 - addition ;
 - soustraction ;
@@ -166,535 +113,840 @@ Créer un programme capable de calculer :
 - division ;
 - modulo.
 
-Objectifs :
+### Contraintes
 
-- opérateurs ;
-- variables ;
-- types numériques.
+Gérer explicitement la division par zéro.
 
-Gérer correctement la division par zéro.
+### Notions
+
+- opérateurs arithmétiques ;
+- types numériques ;
+- conditions ;
+- comparaison stricte.
 
 ---
 
-## Exercice 3 — Vérificateur d'âge
+## EXERCICE 3/50 — Classification selon l'âge
 
-Créer un programme qui détermine si une personne est :
+**Niveau :** Débutant  
+**Difficulté :** 2/10
 
-- mineure ;
-- majeure.
+### Objectif
 
-Puis ajouter des catégories supplémentaires.
+Demander un âge et déterminer la catégorie de la personne :
 
-Objectifs :
+- enfant ;
+- adolescent ;
+- adulte ;
+- senior.
 
+### Contraintes
+
+Refuser les âges négatifs et les saisies qui ne représentent pas un entier valide.
+
+### Notions
+
+- `readline()` ;
+- validation ;
+- conversion ;
+- `if / elseif / else` ;
+- logique conditionnelle.
+
+---
+
+## EXERCICE 4/50 — Calculateur de réduction
+
+**Niveau :** Débutant  
+**Difficulté :** 2/10
+
+### Objectif
+
+Demander le prix d'un produit et appliquer une réduction selon des tranches de prix.
+
+Afficher :
+
+- prix initial ;
+- taux ;
+- montant de la réduction ;
+- prix final.
+
+### Notions
+
+- pourcentage ;
 - conditions ;
-- comparaisons ;
+- `float` ;
+- validation métier ;
+- calculs intermédiaires.
+
+---
+
+## EXERCICE 5/50 — Comparateur de nombres
+
+**Niveau :** Débutant  
+**Difficulté :** 2/10
+
+### Objectif
+
+Demander deux entiers et déterminer :
+
+- le plus grand ;
+- le plus petit ;
+- ou l'égalité.
+
+### Notions
+
+- `>`, `<`, `===` ;
+- conditions ;
+- validation des entrées.
+
+---
+
+## EXERCICE 6/50 — Pair ou impair
+
+**Niveau :** Débutant  
+**Difficulté :** 2/10
+
+### Objectif
+
+Demander un entier et déterminer s'il est :
+
+- nul ;
+- positif ou négatif ;
+- pair ou impair.
+
+### Notions
+
+- modulo `%` ;
+- conditions ;
 - opérateurs logiques.
 
 ---
 
-## Exercice 4 — Calculateur de réduction
+## EXERCICE 7/50 — Moyenne de trois notes
 
-Créer un programme qui calcule le prix final d'un produit selon son prix et son pourcentage de réduction.
+**Niveau :** Débutant  
+**Difficulté :** 3/10
 
-Ajouter plusieurs tranches de réduction.
+### Objectif
 
----
+Demander trois notes, calculer leur moyenne et afficher une appréciation :
 
-## Exercice 5 — Convertisseur
+- `< 10` : Échec ;
+- `10 à < 12` : Passable ;
+- `12 à < 14` : Assez bien ;
+- `14 à < 16` : Bien ;
+- `>= 16` : Très bien.
 
-Créer un convertisseur permettant de convertir :
+### Contraintes
 
-- Celsius → Fahrenheit ;
-- Fahrenheit → Celsius ;
-- kilomètres → miles ;
-- kilogrammes → livres.
+Chaque note doit être comprise entre `0` et `20`.
 
-Objectifs :
+### Notions
 
-- fonctions ;
-- paramètres ;
-- retour de valeur.
-
----
-
-# NIVEAU 2 — CONDITIONS ET BOUCLES
-
-## Exercice 6 — Pair ou impair
-
-Déterminer si un nombre est :
-
-- positif/négatif ;
-- pair/impair ;
-- nul.
+- `float` ;
+- validation ;
+- moyenne ;
+- conditions en cascade.
 
 ---
 
-## Exercice 7 — Table de multiplication
+# NIVEAU 2 — LOGIQUE, CONDITIONS ET BOUCLES
 
-Afficher la table de multiplication d'un nombre.
+## EXERCICE 8/50 — Année bissextile
 
-Puis permettre de générer les tables de 1 à 10.
+**Niveau :** Débutant+  
+**Difficulté :** 3/10
 
-Objectifs :
+### Objectif
+
+Demander une année et déterminer si elle est bissextile.
+
+### Règle
+
+Une année est bissextile si :
+
+```text
+elle est divisible par 400
+OU
+elle est divisible par 4 ET elle n'est pas divisible par 100
+```
+
+### Tests obligatoires
+
+```text
+2000 → bissextile
+2024 → bissextile
+1900 → non bissextile
+2023 → non bissextile
+```
+
+### Notions
+
+- `%` ;
+- `&&` ;
+- `||` ;
+- comparaison ;
+- validation d'un entier ;
+- logique booléenne.
+
+### Sécurité / robustesse
+
+Refuser les années nulles ou négatives et les saisies invalides.
+
+> **Cet exercice reste volontairement en position 8 : il consolide la logique avant l'introduction intensive des boucles.**
+
+---
+
+## EXERCICE 9/50 — Compteur
+
+**Niveau :** Débutant+  
+**Difficulté :** 3/10
+
+### Objectif
+
+Demander une limite et afficher les nombres de `1` jusqu'à cette limite.
+
+Ajouter ensuite :
+
+- compteur croissant ;
+- compteur décroissant ;
+- pas configurable.
+
+### Notions
 
 - `for` ;
-- boucles imbriquées.
+- initialisation ;
+- condition ;
+- incrémentation ;
+- décrémentation.
 
 ---
 
-## Exercice 8 — Somme des nombres
+## EXERCICE 10/50 — Somme d'un intervalle
 
-Calculer la somme des nombres compris entre deux valeurs.
+**Niveau :** Débutant+  
+**Difficulté :** 3/10
 
-Ajouter :
+### Objectif
 
+Demander deux nombres entiers et calculer :
+
+- somme de tous les nombres compris entre eux ;
 - somme des nombres pairs ;
 - somme des nombres impairs.
 
+### Notions
+
+- `for` ;
+- accumulateur ;
+- modulo ;
+- bornes d'un intervalle.
+
 ---
 
-## Exercice 9 — FizzBuzz
+## EXERCICE 11/50 — Tables de multiplication
 
-Implémenter FizzBuzz.
+**Niveau :** Débutant+  
+**Difficulté :** 4/10
 
-Puis créer une version configurable.
+### Objectif
 
-Objectifs :
+Afficher la table de multiplication d'un nombre, puis les tables de `1` à `10`.
+
+### Notions
+
+- boucles ;
+- boucles imbriquées ;
+- formatage des sorties.
+
+---
+
+## EXERCICE 12/50 — FizzBuzz
+
+**Niveau :** Débutant+  
+**Difficulté :** 4/10
+
+### Objectif
+
+Implémenter FizzBuzz de `1` à une limite donnée.
+
+Puis créer une version où les multiples et textes sont configurables.
+
+### Notions
 
 - boucles ;
 - conditions ;
+- modulo ;
 - logique algorithmique.
 
 ---
 
-## Exercice 10 — Nombre premier
+## EXERCICE 13/50 — Nombre premier
 
-Créer un programme permettant de déterminer si un nombre est premier.
+**Niveau :** Intermédiaire  
+**Difficulté :** 5/10
 
-Puis afficher tous les nombres premiers jusqu'à une limite donnée.
+### Objectif
 
----
+Déterminer si un nombre est premier.
 
-# NIVEAU 3 — TABLEAUX ET FONCTIONS
+Puis afficher tous les nombres premiers jusqu'à une limite.
 
-## Exercice 11 — Gestion d'une liste de notes
+### Notions
 
-Créer un tableau contenant des notes.
-
-Calculer :
-
-- moyenne ;
-- minimum ;
-- maximum ;
-- nombre de notes ;
-- nombre de notes supérieures à la moyenne.
+- boucles ;
+- modulo ;
+- booléens ;
+- optimisation simple d'un algorithme.
 
 ---
 
-## Exercice 12 — Gestion d'utilisateurs
+## EXERCICE 14/50 — Jeu du nombre mystère
 
-Créer un tableau associatif contenant plusieurs utilisateurs.
+**Niveau :** Intermédiaire  
+**Difficulté :** 5/10
+
+### Objectif
+
+Créer un jeu dans lequel le programme choisit un nombre aléatoire et l'utilisateur doit le deviner.
 
 Afficher :
 
-- nom ;
-- email ;
-- âge.
+- trop petit ;
+- trop grand ;
+- gagné ;
+- nombre de tentatives.
 
-Rechercher un utilisateur par email.
+### Notions
 
----
+- `while` ;
+- `do...while` ;
+- `random_int()` ;
+- contrôle d'une boucle.
 
-## Exercice 13 — Recherche dans un tableau
+### Robustesse
 
-Créer une fonction :
-
-```php
-findUserByEmail()
-```
-
-Elle doit rechercher un utilisateur dans un tableau.
+Limiter le nombre de tentatives et valider les entrées.
 
 ---
 
-## Exercice 14 — Statistiques
+# NIVEAU 3 — TABLEAUX
 
-Créer un programme capable de calculer :
+## EXERCICE 15/50 — Analyse d'une liste de nombres
 
+Créer un tableau de nombres et calculer :
+
+- somme ;
 - moyenne ;
-- médiane ;
 - minimum ;
 - maximum ;
-- somme ;
-- fréquence.
+- nombre d'éléments.
+
+### Notions
+
+- tableaux indexés ;
+- `foreach` ;
+- accumulateurs ;
+- fonctions natives de tableau.
 
 ---
 
-## Exercice 15 — Gestionnaire de tâches
+## EXERCICE 16/50 — Gestion d'une liste de notes
 
-Créer un petit système permettant de :
+Créer un tableau de notes et déterminer :
 
-- ajouter une tâche ;
-- supprimer une tâche ;
-- marquer une tâche comme terminée ;
-- afficher les tâches.
-
-Objectif :
-
-Commencer à réfléchir comme pour une véritable application.
+- moyenne ;
+- meilleure note ;
+- plus mauvaise note ;
+- nombre de réussites ;
+- nombre d'échecs ;
+- notes supérieures à la moyenne.
 
 ---
 
-# NIVEAU 4 — PHP MODERNE
+## EXERCICE 17/50 — Recherche dans un tableau
 
-## Exercice 16 — Validation de données
+Rechercher une valeur dans un tableau et retourner :
 
-Créer des fonctions de validation pour :
+- si elle existe ;
+- son ou ses positions ;
+- le nombre d'occurrences.
 
+### Notions
+
+- parcours ;
+- comparaison ;
+- index ;
+- fonctions de tableau.
+
+---
+
+## EXERCICE 18/50 — Utilisateurs sous forme de tableaux associatifs
+
+Créer plusieurs utilisateurs avec :
+
+- id ;
+- nom ;
 - email ;
 - âge ;
-- nom ;
-- mot de passe ;
-- numéro de téléphone.
+- rôle.
+
+Afficher et rechercher les utilisateurs.
 
 ---
 
-## Exercice 17 — Manipulation des chaînes
+## EXERCICE 19/50 — Filtrage et tri
 
-Créer un programme qui analyse une phrase :
+Filtrer et trier les utilisateurs selon :
+
+- âge ;
+- rôle ;
+- nom ;
+- statut.
+
+### Notions
+
+- `array_filter()` ;
+- `array_map()` ;
+- `usort()` ;
+- callbacks ;
+- closures.
+
+---
+
+# NIVEAU 4 — FONCTIONS ET RÉUTILISABILITÉ
+
+## EXERCICE 20/50 — Bibliothèque de fonctions mathématiques
+
+Créer des fonctions :
+
+```php
+addition()
+soustraction()
+multiplication()
+division()
+modulo()
+```
+
+### Objectif
+
+Comprendre paramètres, valeurs de retour et responsabilité d'une fonction.
+
+---
+
+## EXERCICE 21/50 — Fonctions de validation
+
+Créer des fonctions de validation :
+
+```php
+isValidAge()
+isValidEmail()
+isValidNumber()
+isValidNote()
+```
+
+### Objectif
+
+Séparer validation et logique métier.
+
+---
+
+## EXERCICE 22/50 — Analyseur de texte
+
+Créer des fonctions capables de calculer :
 
 - nombre de caractères ;
 - nombre de mots ;
-- mots les plus fréquents ;
-- recherche d'un mot ;
-- remplacement d'un mot.
+- fréquence des mots ;
+- recherche ;
+- remplacement.
 
 ---
 
-## Exercice 18 — Dates
+## EXERCICE 23/50 — Gestionnaire de tâches en mémoire
 
-Créer un programme permettant de :
+Créer un gestionnaire permettant :
 
-- calculer l'âge à partir d'une date de naissance ;
-- calculer le nombre de jours entre deux dates ;
-- déterminer si une année est bissextile.
+- ajouter une tâche ;
+- supprimer ;
+- terminer ;
+- rechercher ;
+- afficher ;
+- filtrer les tâches terminées.
 
----
+### Objectif
 
-## Exercice 19 — Exceptions
-
-Créer un système de division sécurisé utilisant les exceptions.
-
-Créer également plusieurs exceptions personnalisées.
-
----
-
-## Exercice 20 — Mini système de validation
-
-Créer une petite classe ou structure permettant de valider plusieurs champs.
-
-Utiliser :
-
-- exceptions ;
-- fonctions ;
-- tableaux ;
-- types.
+Combiner tableaux, fonctions, boucles et validation.
 
 ---
 
-# NIVEAU 5 — FICHIERS ET DONNÉES
+# NIVEAU 5 — DONNÉES, FICHIERS ET PHP MODERNE
 
-## Exercice 21 — Carnet de contacts
+## EXERCICE 24/50 — Dates et heures
 
-Stocker les contacts dans un fichier.
+Travailler avec `DateTimeImmutable` pour :
 
-Permettre :
+- calculer un âge ;
+- calculer une différence entre deux dates ;
+- déterminer une échéance ;
+- parcourir une période.
 
-- ajout ;
+---
+
+## EXERCICE 25/50 — Exceptions
+
+Créer un système de calcul sécurisé utilisant :
+
+- `try` ;
+- `catch` ;
+- `finally` ;
+- `throw`.
+
+Créer au moins une exception personnalisée.
+
+---
+
+## EXERCICE 26/50 — Carnet de contacts dans un fichier
+
+Stocker des contacts dans un fichier et permettre :
+
+- création ;
 - lecture ;
 - modification ;
 - suppression ;
 - recherche.
 
----
+### Sécurité
 
-## Exercice 22 — JSON
-
-Stocker les contacts au format JSON.
-
-Créer les opérations CRUD sur le fichier JSON.
+Gérer les erreurs de lecture/écriture et ne pas faire confiance aux chemins fournis par l'utilisateur.
 
 ---
 
-## Exercice 23 — Importation de données
+## EXERCICE 27/50 — Carnet de contacts JSON
 
-Lire un fichier CSV contenant des utilisateurs.
+Remplacer le stockage texte par JSON.
 
-Transformer les données en structures PHP.
+Utiliser :
 
-Valider les données avant de les enregistrer.
+```php
+json_encode()
+json_decode()
+```
+
+Gérer les erreurs de décodage et les données malformées.
 
 ---
 
-## Exercice 24 — Journalisation
+## EXERCICE 28/50 — Importateur CSV
 
-Créer un système de logs.
+Lire un fichier CSV d'utilisateurs, valider chaque ligne et transformer les données en structures PHP.
 
-Enregistrer :
+### Sécurité
+
+Refuser ou isoler les lignes invalides et éviter l'exécution de contenu provenant du fichier.
+
+---
+
+## EXERCICE 29/50 — Logger
+
+Créer un système de journalisation enregistrant :
 
 - date ;
 - niveau ;
 - message ;
 - contexte.
 
+Niveaux minimum :
+
+```text
+INFO
+WARNING
+ERROR
+```
+
 ---
 
-## Exercice 25 — Gestionnaire de fichiers sécurisé
+## EXERCICE 30/50 — Gestionnaire de fichiers sécurisé
 
-Créer un système permettant d'envoyer et de gérer des fichiers.
+Créer un système de gestion d'upload.
 
-Étudier :
+Vérifier :
 
-- validation MIME ;
-- extension ;
 - taille ;
-- nommage ;
+- MIME réel ;
+- extension ;
+- nom généré ;
 - emplacement de stockage.
 
-**ATTENTION : cet exercice doit obligatoirement comporter une analyse de sécurité.**
+### Sécurité obligatoire
+
+Étudier les risques liés à :
+
+- upload de fichiers exécutables ;
+- double extension ;
+- fichiers malveillants ;
+- path traversal ;
+- noms de fichiers contrôlés par l'utilisateur.
 
 ---
 
 # NIVEAU 6 — PROGRAMMATION ORIENTÉE OBJET
 
-## Exercice 26 — Classe User
+## EXERCICE 31/50 — Classe User
 
-Créer une classe `User`.
-
-Elle doit posséder :
+Créer une classe `User` avec :
 
 - propriétés ;
 - constructeur ;
 - méthodes ;
-- getters/setters si nécessaires.
+- types ;
+- visibilité.
 
 ---
 
-## Exercice 27 — Encapsulation
+## EXERCICE 32/50 — Encapsulation
 
-Transformer une classe mal conçue en classe correctement encapsulée.
+Refactoriser une classe mal conçue.
 
 Travailler :
 
 - `private` ;
 - `protected` ;
 - `public` ;
-- invariants.
+- invariants ;
+- méthodes d'accès.
 
 ---
 
-## Exercice 28 — Héritage
+## EXERCICE 33/50 — Héritage
 
-Créer plusieurs types d'utilisateurs :
+Créer une hiérarchie :
 
-- `User` ;
-- `Admin` ;
-- `Editor`.
+```text
+User
+├── Admin
+└── Editor
+```
 
-Étudier l'héritage.
-
----
-
-## Exercice 29 — Polymorphisme
-
-Créer plusieurs classes implémentant un comportement commun.
-
-Faire fonctionner le programme sans dépendre du type concret.
+Comprendre ce que l'héritage apporte et ses limites.
 
 ---
 
-## Exercice 30 — Interfaces
+## EXERCICE 34/50 — Polymorphisme
 
-Créer une architecture utilisant des interfaces.
+Créer plusieurs classes ayant un comportement commun et utiliser ces objets sans dépendre de leur classe concrète.
 
-Par exemple :
+---
+
+## EXERCICE 35/50 — Interfaces
+
+Créer par exemple :
 
 ```text
 PaymentInterface
-    |
-    ├── CardPayment
-    ├── MobileMoneyPayment
-    └── BankPayment
+├── CardPayment
+├── MobileMoneyPayment
+└── BankPayment
 ```
 
-Objectif :
+### Objectif
 
-Comprendre le polymorphisme et le découplage.
+Comprendre contrat, abstraction, polymorphisme et découplage.
 
 ---
 
 # NIVEAU 7 — POO AVANCÉE ET ARCHITECTURE
 
-## Exercice 31 — Classe abstraite
+## EXERCICE 36/50 — Classe abstraite et traits
 
-Créer une classe abstraite servant de base à plusieurs classes concrètes.
+Créer une classe abstraite et utiliser un trait lorsque le comportement est réellement transversal.
 
----
+### Notions
 
-## Exercice 32 — Composition
-
-Remplacer un héritage inutile par de la composition.
-
-Expliquer pourquoi la composition peut être préférable.
-
----
-
-## Exercice 33 — Dependency Injection
-
-Créer un service dépendant d'une autre classe.
-
-Commencer par une mauvaise implémentation puis la refactoriser avec l'injection de dépendances.
+- `abstract` ;
+- méthodes abstraites ;
+- `trait` ;
+- réutilisation contrôlée.
 
 ---
 
-## Exercice 34 — Repository
+## EXERCICE 37/50 — Composition
 
-Créer :
+Refactoriser un système utilisant inutilement l'héritage afin d'utiliser la composition.
+
+### Objectif
+
+Comprendre la différence entre relation « est un » et relation « possède un / utilise un ».
+
+---
+
+## EXERCICE 38/50 — Injection de dépendances
+
+Créer un service dépendant d'une autre classe, puis remplacer la création interne des dépendances par leur injection.
+
+### Notions
+
+- dépendances ;
+- couplage ;
+- injection par constructeur ;
+- testabilité.
+
+---
+
+## EXERCICE 39/50 — Namespaces et Composer
+
+Organiser le code avec :
 
 ```text
-UserRepository
+src/
+    Models/
+    Services/
+    Repositories/
 ```
 
-Il doit gérer l'accès aux utilisateurs.
-
-Objectif :
-
-séparer la logique métier de l'accès aux données.
+Configurer Composer et l'autoloading PSR-4.
 
 ---
 
-## Exercice 35 — Mini architecture MVC
+## EXERCICE 40/50 — Mini architecture MVC
 
-Construire une petite application PHP organisée en :
+Construire une petite application avec :
 
 ```text
-Controllers/
-Models/
-Views/
-Services/
-Repositories/
+public/
+src/
+    Controllers/
+    Models/
+    Services/
+    Repositories/
+views/
 ```
 
-Introduire :
+Introduire progressivement :
 
-- namespaces ;
-- autoloading ;
+- router ;
+- contrôleurs ;
+- services ;
+- vues ;
 - séparation des responsabilités.
 
 ---
 
-# NIVEAU 8 — MYSQL + PDO
+# NIVEAU 8 — SQL, MYSQL/MARIADB ET PDO
 
-## Exercice 36 — Première base de données
+## EXERCICE 41/50 — Modélisation et première base de données
 
-Créer une base MySQL/MariaDB avec :
+Concevoir une petite base de données pour l'application.
 
-```text
-users
-```
+Étudier :
 
-Comprendre :
-
-- clé primaire ;
-- types ;
+- tables ;
+- clés primaires ;
+- clés étrangères ;
 - contraintes ;
-- index.
+- index ;
+- relations.
+
+Produire le schéma SQL.
 
 ---
 
-## Exercice 37 — CRUD avec PDO
+## EXERCICE 42/50 — CRUD avec PDO
 
-Créer un CRUD complet :
+Créer un CRUD complet avec PDO :
 
 - Create ;
 - Read ;
 - Update ;
 - Delete.
 
-Utiliser PDO.
+### Sécurité
+
+Utiliser des requêtes préparées et ne jamais concaténer directement des données utilisateur dans les requêtes SQL.
 
 ---
 
-## Exercice 38 — Relations SQL
+## EXERCICE 43/50 — Relations SQL et transactions
 
-Créer une base avec plusieurs tables reliées.
+Travailler avec plusieurs tables et :
 
-Par exemple :
+- `JOIN` ;
+- relations ;
+- agrégations ;
+- transactions ;
+- `beginTransaction()` ;
+- `commit()` ;
+- `rollBack()`.
 
-```text
-users
-posts
-comments
-```
+### Objectif
 
-Créer les relations et utiliser les JOIN.
-
----
-
-## Exercice 39 — Requêtes préparées
-
-Transformer volontairement plusieurs requêtes vulnérables en requêtes sécurisées.
-
-Étudier l'injection SQL.
+Comprendre l'intégrité des données et l'atomicité.
 
 ---
 
-## Exercice 40 — Transactions
+# NIVEAU 9 — HTTP, AUTHENTIFICATION ET SÉCURITÉ
 
-Créer une opération nécessitant plusieurs requêtes SQL.
+## EXERCICE 44/50 — HTTP et formulaires PHP
 
-Utiliser :
+Construire un formulaire connecté à PHP.
 
-```php
-beginTransaction()
-commit()
-rollBack()
-```
+Comprendre :
 
-Comprendre pourquoi les transactions sont nécessaires.
+- requête HTTP ;
+- GET ;
+- POST ;
+- paramètres ;
+- headers ;
+- codes HTTP ;
+- validation côté serveur ;
+- réponse HTTP.
 
----
+### Sécurité
 
-# NIVEAU 9 — AUTHENTIFICATION + SÉCURITÉ WEB
-
-## Exercice 41 — Inscription
-
-Créer un système d'inscription.
-
-Utiliser :
-
-```php
-password_hash()
-```
-
-Ne jamais stocker les mots de passe en clair.
+Ne jamais considérer les données du navigateur comme fiables.
 
 ---
 
-## Exercice 42 — Connexion
+## EXERCICE 45/50 — Inscription et mots de passe
 
-Créer un système de connexion utilisant :
+Créer un système d'inscription avec :
 
-```php
-password_verify()
-```
+- validation ;
+- email unique ;
+- hashage avec `password_hash()` ;
+- stockage sécurisé en base.
 
-Créer une session sécurisée.
+### Sécurité
+
+Ne jamais stocker de mot de passe en clair ni utiliser un hash manuel inadapté.
 
 ---
 
-## Exercice 43 — Autorisation
+## EXERCICE 46/50 — Connexion, sessions et déconnexion
+
+Créer :
+
+- connexion ;
+- vérification du mot de passe ;
+- session ;
+- déconnexion ;
+- protection des pages privées.
+
+Utiliser `password_verify()`.
+
+### Sécurité
+
+Étudier notamment :
+
+- fixation de session ;
+- régénération d'identifiant de session ;
+- cookies de session ;
+- durée de session ;
+- fuite d'informations.
+
+---
+
+## EXERCICE 47/50 — Autorisation et protection CSRF/XSS
 
 Créer plusieurs rôles :
 
@@ -704,479 +956,257 @@ EDITOR
 ADMIN
 ```
 
-Implémenter des permissions.
-
-Comprendre :
-
-**authentification ≠ autorisation**
-
----
-
-## Exercice 44 — Protection CSRF + XSS
-
-Créer un formulaire vulnérable puis le sécuriser.
+Puis protéger les actions sensibles.
 
 Étudier :
 
+- authentification vs autorisation ;
+- contrôle d'accès ;
 - CSRF ;
 - XSS ;
-- validation ;
 - escaping ;
+- validation ;
 - tokens CSRF.
 
 ---
 
-## Exercice 45 — Audit de sécurité
+# NIVEAU 10 — API, TESTS ET PROJET FINAL
 
-Je vais te donner une application PHP volontairement vulnérable.
+## EXERCICE 48/50 — API REST PHP
 
-Tu dois rechercher :
+Construire une API permettant par exemple :
+
+```text
+GET    /users
+GET    /users/{id}
+POST   /users
+PUT    /users/{id}
+DELETE /users/{id}
+```
+
+### Notions
+
+- HTTP ;
+- JSON ;
+- routing ;
+- status codes ;
+- validation ;
+- gestion des erreurs ;
+- authentification API.
+
+### Sécurité
+
+Étudier :
+
+- validation des entrées ;
+- autorisation ;
+- fuite de données ;
+- limitation des informations retournées ;
+- erreurs contrôlées.
+
+---
+
+## EXERCICE 49/50 — Tests et audit de sécurité
+
+Construire des tests pour les fonctionnalités principales puis auditer l'application.
+
+Tester notamment :
+
+- cas nominal ;
+- cas limites ;
+- entrées invalides ;
+- erreurs ;
+- authentification ;
+- autorisation ;
+- accès interdit ;
+- validation.
+
+Rechercher les vulnérabilités suivantes :
 
 - SQL Injection ;
 - XSS ;
 - CSRF ;
 - mauvaise gestion des sessions ;
-- mots de passe mal stockés ;
 - contrôle d'accès défaillant ;
-- fichiers dangereux ;
+- upload dangereux ;
 - secrets exposés ;
-- erreurs révélant des informations.
+- messages d'erreur trop détaillés.
 
-Tu ne dois pas seulement corriger le code.
+### Objectif
 
-Tu dois expliquer **pourquoi chaque vulnérabilité existe**.
+Ne pas seulement corriger une vulnérabilité : expliquer sa cause, son impact et la protection mise en place.
 
 ---
 
-# NIVEAU 10 — BACKEND PROFESSIONNEL
+## EXERCICE 50/50 — PROJET FINAL : APPLICATION BACKEND PHP
 
-## Exercice 46 — Router PHP
+### Objectif
 
-Créer un système de routing permettant de gérer :
+Construire une véritable application backend en réutilisant les connaissances acquises pendant les 49 exercices précédents.
+
+Le projet devra comporter au minimum :
 
 ```text
-GET /
-GET /users
-GET /users/{id}
-POST /users
-PUT /users/{id}
-DELETE /users/{id}
+PHP
+Composer
+PSR-4
+POO
+Architecture MVC ou architecture en couches
+MySQL/MariaDB
+PDO
+CRUD
+Validation
+HTTP
+Formulaires
+Sessions
+Authentification
+Autorisation
+Sécurité
+API REST
+JSON
+Logs
+Gestion des erreurs
+Tests
 ```
 
----
-
-## Exercice 47 — API REST
-
-Créer une API REST complète avec :
-
-- JSON ;
-- HTTP status codes ;
-- validation ;
-- erreurs ;
-- CRUD ;
-- pagination ;
-- recherche ;
-- filtres ;
-- tri.
-
----
-
-## Exercice 48 — Architecture complète
-
-Créer une application organisée avec :
+### Architecture cible
 
 ```text
 public/
-app/
+    index.php
+
+src/
     Controllers/
     Models/
     Services/
     Repositories/
     Middleware/
-    DTO/
     Exceptions/
+    Validators/
+
 config/
+
 storage/
-vendor/
+    logs/
+    uploads/
+
+views/
+
+tests/
+
+composer.json
 ```
 
-Utiliser :
+### Exigences
 
-- Composer ;
-- PSR-4 ;
-- namespaces ;
-- Dependency Injection ;
-- architecture en couches.
+L'application devra :
 
----
-
-## Exercice 49 — Tests
-
-Ajouter des tests à l'application.
-
-Tester :
-
-- services ;
-- validation ;
-- repositories ;
-- authentification ;
-- logique métier.
-
-Utiliser PHPUnit.
+1. avoir une base de données correctement modélisée ;
+2. utiliser PDO et des requêtes préparées ;
+3. séparer les responsabilités ;
+4. gérer les erreurs et exceptions ;
+5. valider les données côté serveur ;
+6. protéger les comptes utilisateurs ;
+7. gérer les rôles et permissions ;
+8. protéger les formulaires contre CSRF ;
+9. empêcher les XSS par une sortie correctement échappée ;
+10. éviter les injections SQL ;
+11. sécuriser les sessions ;
+12. proposer une API REST ;
+13. journaliser les événements importants ;
+14. contenir des tests ;
+15. être documentée ;
+16. être capable d'être déployée.
 
 ---
 
-# EXERCICE 50 — PROJET FINAL
+# MÉTHODE DE VALIDATION DES EXERCICES
 
-Construire une véritable application backend PHP.
+Un exercice n'est pas considéré comme terminé simplement parce que le programme fonctionne.
 
-Le projet doit comporter au minimum :
+Il doit également respecter quatre critères :
 
-### Utilisateurs
+### 1. Fonctionnement
 
-- inscription ;
-- connexion ;
-- déconnexion ;
-- modification du profil ;
-- changement de mot de passe.
+Le programme produit le résultat attendu.
 
-### Authentification
+### 2. Compréhension
 
-- sessions sécurisées ;
-- hashage des mots de passe ;
-- contrôle d'accès.
+Je dois être capable d'expliquer le code et les notions utilisées.
 
-### Rôles
+### 3. Qualité
 
-- utilisateur ;
-- administrateur ;
-- éventuellement éditeur.
+Le code doit être lisible, cohérent et correctement structuré pour le niveau de l'exercice.
 
-### Base de données
+### 4. Sécurité
 
-- MySQL/MariaDB ;
-- relations ;
-- contraintes ;
-- index ;
-- transactions.
-
-### Architecture
-
-- PHP moderne ;
-- POO ;
-- namespaces ;
-- Composer ;
-- PSR-4 ;
-- Controllers ;
-- Services ;
-- Repositories ;
-- DTO ;
-- Middleware ;
-- Exceptions.
-
-### API
-
-Créer plusieurs endpoints REST.
-
-### Fonctionnalités
-
-Ajouter :
-
-- recherche ;
-- filtrage ;
-- tri ;
-- pagination ;
-- CRUD ;
-- upload sécurisé.
-
-### Sécurité
-
-L'application doit prendre en compte :
-
-- SQL Injection ;
-- XSS ;
-- CSRF ;
-- session fixation ;
-- session hijacking ;
-- brute force ;
-- contrôle d'accès ;
-- path traversal ;
-- upload malveillant ;
-- exposition de secrets ;
-- fuite d'informations via les erreurs.
-
-### Tests
-
-Ajouter des tests automatisés.
-
-### Git
-
-Le projet doit être correctement versionné.
-
-### Documentation
-
-Créer un README expliquant :
-
-- installation ;
-- configuration ;
-- base de données ;
-- variables d'environnement ;
-- lancement ;
-- tests ;
-- architecture ;
-- sécurité.
+Les entrées utilisateur doivent être traitées comme non fiables et les risques pertinents doivent être identifiés.
 
 ---
 
-# 5. SYSTÈME DE DIFFICULTÉ
+# RÈGLE DE PROGRESSION
 
-Chaque exercice doit avoir un niveau :
+Nous ne devons pas avancer uniquement parce que le numéro de l'exercice change.
+
+Si une notion importante n'est pas comprise, elle doit être retravaillée avant de poursuivre.
+
+Les exercices précédents peuvent être réutilisés comme base pour créer des variantes ou des mini-défis de consolidation, sans modifier leur historique Git.
+
+---
+
+# ÉTAT DU PARCOURS
 
 ```text
-★☆☆☆☆ Débutant
-★★☆☆☆ Facile
-★★★☆☆ Intermédiaire
-★★★★☆ Avancé
-★★★★★ Expert
+01 ✓ Profil utilisateur
+02 ✓ Calculateur
+03 ✓ Classification selon l'âge
+04 ✓ Calculateur de réduction
+05 ✓ Comparateur de nombres
+06 ✓ Pair ou impair
+07 ✓ Moyenne de trois notes
+08 → Année bissextile
+09 → Compteur
+10 → Somme d'un intervalle
+11 → Tables de multiplication
+12 → FizzBuzz
+13 → Nombre premier
+14 → Jeu du nombre mystère
+15 → Analyse d'une liste de nombres
+16 → Gestion d'une liste de notes
+17 → Recherche dans un tableau
+18 → Utilisateurs sous forme de tableaux associatifs
+19 → Filtrage et tri
+20 → Bibliothèque de fonctions mathématiques
+21 → Fonctions de validation
+22 → Analyseur de texte
+23 → Gestionnaire de tâches
+24 → Dates et heures
+25 → Exceptions
+26 → Carnet de contacts fichier
+27 → Carnet de contacts JSON
+28 → Importateur CSV
+29 → Logger
+30 → Gestionnaire de fichiers sécurisé
+31 → Classe User
+32 → Encapsulation
+33 → Héritage
+34 → Polymorphisme
+35 → Interfaces
+36 → Classe abstraite et traits
+37 → Composition
+38 → Injection de dépendances
+39 → Namespaces et Composer
+40 → Mini architecture MVC
+41 → SQL et base de données
+42 → CRUD avec PDO
+43 → Relations SQL et transactions
+44 → HTTP et formulaires
+45 → Inscription
+46 → Connexion et sessions
+47 → Autorisation + CSRF/XSS
+48 → API REST
+49 → Tests + audit de sécurité
+50 → Projet backend final
 ```
 
-La difficulté doit augmenter progressivement.
-
-Ne rends pas artificiellement un exercice difficile.
-
-La difficulté doit venir de la complexité du problème.
-
----
-
-# 6. SYSTÈME D'INDICES
-
-Si je bloque, ne donne pas immédiatement la solution.
-
-Utilise :
-
-### INDICE 1 — Conceptuel
-
-Explique le concept dont j'ai besoin.
-
-### INDICE 2 — Technique
-
-Indique quelle fonction, structure ou technique pourrait m'aider.
-
-### INDICE 3 — Direction
-
-Indique les étapes générales à suivre.
-
-### INDICE 4 — Pseudo-code
-
-Donne un pseudo-code.
-
-### INDICE 5 — Solution
-
-Donne la solution seulement si nécessaire.
-
----
-
-# 7. CORRECTION DE MON CODE
-
-Lorsque je t'envoie ma solution, analyse-la selon :
-
-## 1. Fonctionnement
-
-Est-ce que le programme fonctionne ?
-
-## 2. Logique
-
-Mon raisonnement est-il correct ?
-
-## 3. PHP
-
-Est-ce que j'utilise correctement PHP ?
-
-## 4. Qualité
-
-Le code est-il :
-
-- lisible ;
-- maintenable ;
-- réutilisable ;
-- correctement structuré ?
-
-## 5. Sécurité
-
-Recherche systématiquement les vulnérabilités.
-
-## 6. Performance
-
-Signale les problèmes importants de performance lorsqu'ils existent.
-
-## 7. Bonnes pratiques
-
-Montre comment améliorer mon code.
-
----
-
-# 8. ÉVALUATION
-
-Après chaque groupe de 5 exercices, fais une évaluation.
-
-Évalue :
-
-| Compétence      | Note |
-| --------------- | ---: |
-| Compréhension   |   /5 |
-| Algorithmique   |   /5 |
-| PHP             |   /5 |
-| Qualité du code |   /5 |
-| Sécurité        |   /5 |
-| Total           |  /25 |
-
-Je ne dois pas simplement obtenir une bonne note en faisant fonctionner le code.
-
-Un code qui fonctionne mais qui est vulnérable doit être sanctionné.
-
----
-
-# 9. RÈGLE DE PROGRESSION
-
-Je ne dois pas passer au niveau suivant simplement parce que j'ai terminé l'exercice.
-
-Vérifie que j'ai compris les concepts.
-
-Si je fais plusieurs erreurs sur une notion :
-
-1. identifie la lacune ;
-2. explique à nouveau la notion ;
-3. donne un mini-exercice ciblé ;
-4. fais-moi recommencer ;
-5. vérifie ma compréhension.
-
----
-
-# 10. RÉVISION INTELLIGENTE
-
-Lorsque nous avons terminé plusieurs exercices, réutilise parfois d'anciennes notions dans les nouveaux exercices.
-
-Par exemple, un exercice sur PDO peut également demander :
-
-- fonctions ;
-- tableaux ;
-- POO ;
-- exceptions ;
-- validation ;
-- sécurité.
-
-Le but est de m'apprendre à **combiner les connaissances**.
-
----
-
-# 11. EXERCICES DE DEBUGGING
-
-À intervalles réguliers, donne-moi du code volontairement incorrect.
-
-Je dois trouver :
-
-- erreurs syntaxiques ;
-- erreurs logiques ;
-- erreurs PHP ;
-- erreurs SQL ;
-- erreurs d'architecture ;
-- failles de sécurité.
-
-Ne me dis pas immédiatement où se trouve le problème.
-
----
-
-# 12. EXERCICES DE REFACTORING
-
-Donne-moi parfois du mauvais code PHP.
-
-Je dois :
-
-1. comprendre ce qu'il fait ;
-2. identifier les problèmes ;
-3. identifier les risques ;
-4. le refactoriser ;
-5. expliquer mes choix.
-
----
-
-# 13. EXERCICES DE CONCEPTION
-
-À partir du niveau intermédiaire, donne-moi aussi des problèmes où je dois réfléchir avant de coder.
-
-Par exemple :
-
-> "Conçois un système permettant de gérer des utilisateurs, leurs rôles et leurs permissions."
-
-Je dois déterminer :
-
-- les classes ;
-- les relations ;
-- les responsabilités ;
-- les données ;
-- les méthodes ;
-- l'architecture.
-
-Ne me donne pas directement la conception.
-
----
-
-# 14. PROJETS CUMULATIFS
-
-Les exercices 15, 25, 35, 45 et 50 doivent être des exercices plus importants.
-
-Ils doivent réutiliser plusieurs notions apprises précédemment.
-
-Chaque projet doit augmenter fortement mon autonomie.
-
----
-
-# 15. RÈGLE DE SÉCURITÉ ABSOLUE
-
-Chaque fois que du code touche :
-
-- une entrée utilisateur ;
-- une base de données ;
-- un fichier ;
-- une session ;
-- un cookie ;
-- une authentification ;
-- une API ;
-- un upload ;
-- une commande système ;
-
-analyse systématiquement les risques de sécurité.
-
-Utilise une section :
-
-```text
-ATTENTION — SÉCURITÉ
-```
-
-Et explique :
-
-**Vulnérabilité → Cause → Risque → Exemple → Protection → Bonne pratique**
-
-Je veux apprendre à penser à la sécurité **avant même d'écrire le code**.
-
----
-
-# 16. RÈGLE FINALE
-
-Ne me donne jamais les 50 exercices en une seule fois.
-
-Nous devons travailler progressivement.
-
-Commence uniquement par :
-
-**EXERCICE 1/50**
-
-Puis attends ma réponse.
-
-Après correction, passe à l'exercice suivant.
-
-Adapte la difficulté en fonction de mes performances.
-
-Ton objectif n'est pas que je termine rapidement les 50 exercices.
-
-Ton objectif est qu'à la fin des 50 exercices, je sois capable de **raisonner, concevoir, coder, déboguer, sécuriser et maintenir une véritable application PHP backend.**
+**Progression actuelle : 7/50 exercices validés.**
